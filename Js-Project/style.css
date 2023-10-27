@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  font-family: times new "Times New Roman", Times, serif;
+  overflow-x: hidden;
+}
+p {
+  font-weight: bold;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 70%;
+  margin: 0 auto;
+}
+#balance {
+  font-size: 15px;
+}
+#balance {
+  font-size: 25px;
+  margin: 0 0 0 7px;
+}
+/*code about the form and the add
+transaction button*/
+#form input {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+#transaction-btn {
+  margin-top: 1vh;
+  width: 100%;
+  height: 25px;
+  background-color: white;
+  color:black;
+  height: 30px;
+  outline: none;
+  border:none;
+}
+#transaction-btn:hover{
+  background-color:dodgerblue;
+  color:white;
+}
+/*code regarding the income/expenses div*/
+.exp-balance-container{
+  display:flex;
+  margin-left:3px;
+  background:white;
+  box-shadow: 1px 1px 5px grey;
+  justify-content:space-between;
+  padding:2rem;
+  margin-bottom:0.4rem;
+}
+
+.container1{
+  width:80%;
+  margin: 30px;
+}
+.container2 {
+  display: flex;
+  justify-content: space-around;
+  border-style: none;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 1px 1px 5px grey;
+}
+.container2 > div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 40%;
+}
+.container2 > div > p {
+  font-size: 19px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.container2 > div > span {
+  margin: 8px;
+}
+#border-here {
+  border-right: solid;
+  border-color: rgb(190, 190, 190);
+  border-width: 1px;
+}
+#money-income {
+  color: green;
+  font-weight: bold;
+}
+.plus {
+  color: green;
+  border-right: solid;
+  border-width: 4px;
+}
+.minus {
+  color: red;
+  border-right: solid;
+  border-width: 4px;
+}
+#money-expense {
+  color: red;
+  font-weight: bold;
+}
+/*code regarding the history list elements*/
+#list {
+  padding: 0;
+}
+li {
+  list-style: none;
+  border-style: none;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 25px;
+  margin: 12px;
+  border:none;
+  outline:none;
+}
+
+.delete-btn {
+  background-color: red;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom: 0;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  outline:none;
+  border:none;
+  padding:10px;
+  margin-left:20px;
+}
+
+li:hover .delete-btn {
+  opacity: 1;
+   outline:none;
+  border:none;
+  
+}
